@@ -14,8 +14,7 @@ function botonPersonal() {
 }
 
 function colorRojo() {
-    let cambiarColores = document.getElementsByClassName("para")[1];
-    cambiarColores.style.color = "red";
+    document.getElementsByClassName("para").style.color = "red";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -40,6 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
         misClases[index].classList.add("hola");
     }
 
-    let cambiarColor = document.getElementsByClassName("para");
-    cambiarColor.addEventListener('click', colorRojo);
+    document.getElementsByClassName("para").addEventListener('click', colorRojo);
+    
 })
