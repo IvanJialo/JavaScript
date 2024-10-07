@@ -14,8 +14,7 @@ function botonPersonal() {
 
 function colorRojo() {
     let misClases = document.getElementsByClassName("para");
-    misClases[0].classList.add('rojo')
-    console.log("NO CLIIIIIICK!!!!!!")
+    misClases[0].classList.add('rojo');
 
 }
 
@@ -23,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //console.log("DOM ha sido cargado");
 
     let buttonNoClick = document.getElementById("no-click");
-    
+
     //console.log(buttonNoClick);
 
     buttonNoClick.addEventListener('click', noClick);
@@ -42,5 +41,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.getElementById("rojo").addEventListener('click', colorRojo);
+
+    let boton = document.getElementById("submit");
+    boton.addEventListener('click', () => {
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let message = document.getElementById('message').value;
+
+        console.log("Name: ", name);
+        console.log("Email: ", email);
+        console.log("Message: ", message);
+        
+    })
+        
     
 })
