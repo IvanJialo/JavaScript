@@ -1,5 +1,4 @@
 console.log("mi primer mensaje");
-// alert("nomeseasmaricon");
 
 function miBoton(){
     console.error("Has pinchado en el boton, maquina");
@@ -14,8 +13,9 @@ function botonPersonal() {
 }
 
 function colorRojo() {
-    let claseRoja = document.getElementsByClassName("para");
-    claseRoja[1].classList.add('rojo');
+    let misClases = document.getElementsByClassName("para");
+    misClases[0].classList.add('rojo')
+    console.log("NO CLIIIIIICK!!!!!!")
 
 }
 
